@@ -16,9 +16,11 @@ textos[i].classList.add("ativo");
 
 const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2026-12-18T00:00:00");
+const tempoObjetivo2 = new Date("2026-12-18T00:00:00");
+const tempoObjetivo3 = new Date("2026-12-18T00:00:00");
+const tempoObjetivo4 = new Date("2026-12-18T00:00:00");
 
-
-contadores[0].textContent = calculaTempo(tempoObjetivo1);
+const tempo = [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
 
 function calculaTempo(tempoObjetivo) {
 let tempoAtual = new Date();
@@ -36,3 +38,4 @@ return (dias + " dias " + horas +  " horas " + minutos + " minutos " + segundos 
 
 
 }
+
